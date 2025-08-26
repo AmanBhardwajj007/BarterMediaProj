@@ -1,22 +1,29 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from '../logo.png'
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-screen bg-[#ff4444] shadow-lg h-[80px] fixed flex justify-center items-center z-50">
+    <nav className="w-screen bg-slate-300 shadow-lg h-[80px] fixed flex justify-center items-center z-50">
       <div className="w-[85%] h-[60px] flex justify-between items-center">
         
-        <div className="w-[10%] flex justify-center items-center text-2xl font-semibold">
+        <div className="w-[10%] h-10 flex justify-center items-center text-2xl font-semibold">
           <a href="/">
-            <h2 className="hover:text-[#74c0df] text-[#fff]">LOGO</h2>
+            {/* <h2 className="hover:text-[#74c0df] text-[#fff]">LOGO</h2> */}
+              <img
+                className="h-full w-auto object-contain"
+                src={logo}
+                alt="logo"
+              />
           </a>
         </div>
 
+
         
         <div className="hidden md:flex w-[85%] items-center justify-end lg:text-[17px] pr-2">
-          <div className="flex gap-6 cursor-pointer text-[#fff] font-medium">
+          <div className="flex gap-6 cursor-pointer text-[#2b2929] font-medium">
             <Link className="hover:text-[#74c0df]" to="/">Home</Link>
             <Link className="hover:text-[#74c0df]" to="/services">Services</Link>
             <Link className="hover:text-[#74c0df]" to="/about">About us</Link>
