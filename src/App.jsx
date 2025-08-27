@@ -21,7 +21,7 @@ function App() {
       <ScrollToTop/>
       <Nav />
 
-      <div className="pt-[80px]"> 
+      <div className=""> 
         <Routes>
           <Route path="/" element={<Homepage />} />
           {/* <Route path="/slider" element={<Slider />} /> */}

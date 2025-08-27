@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className='w-full h-auto md:h-[75vh] flex flex-col items-center pt-3 bg-slate-900 text-white'>
+    <div className='w-screen h-auto md:h-[75vh] flex flex-col items-center pt-3 bg-slate-900 text-white'>
       <div className='w-[90%] h-auto md:h-[55vh] flex flex-col md:flex-row justify-between md:justify-around mt-4 gap-6 md:gap-0'>
         
         <div className='w-full md:w-[31%] h-auto md:h-[55vh]'>

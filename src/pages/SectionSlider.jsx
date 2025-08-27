@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import news1 from "../image/news1.jpg"
+import news2 from "../image/news2.jpg"
+import ii1 from "../image/ii1.jpeg"
+import ii2 from "../image/ii2.jpg"
+import kbc1 from "../image/kbc1.jpg"
+import kbc2 from "../image/kbc2.jpg"
 
 const sections = [
   {
     id: 1,
     content: (
-      <div className="relative w-full h-[80vh] flex justify-center items-center bg-[url('./news.jpg')] bg-cover bg-center overflow-hidden">
+      <div className="relative w-screen h-[100vh] flex justify-center items-center bg-[url('./news.jpg')] bg-cover bg-center overflow-hidden">
         <div className="absolute inset-0 bg-white/50"></div>
 
-        <div className="relative w-[90%] h-full flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-12 lg:gap-16 z-20 py-6">
+        <div className="relative w-[90%] h-[85vh] mt-10 flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-12 lg:gap-16 z-20 py-6">
           
           {/* Text Box */}
           <div className="w-full md:w-[40%] h-auto flex flex-col justify-center backdrop-blur-2xl p-6 rounded-lg">
@@ -30,14 +36,14 @@ const sections = [
               className="w-full sm:w-[80%] md:w-[90%] flex-1 rounded-tl-2xl rounded-br-2xl overflow-hidden bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(https://akm-img-a-in.tosshub.com/aajtak/images/story/202103/aaj-sixteen_nine.jpg?size=948:533)",
+                  `url(${news1})`,
               }}
             />
             <div
               className="hidden md:block w-full sm:w-[80%] md:w-[90%] flex-1 rounded-tl-2xl rounded-br-2xl overflow-hidden bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVs_Rqwk6lqh26PtS-6R2GfrU2dhfURt9-7wYuLIHnpbfW5MBc6wkz_VbJM_07zLb12LY&usqp=CAU)",
+                  `url(${news2})`,
               }}
             />
           </div>
@@ -49,10 +55,10 @@ const sections = [
   {
     id: 2,
     content: (
-      <div className="relative w-full h-[80vh] flex justify-center items-center bg-[url('./sing.jpg')] bg-cover bg-center overflow-hidden">
+      <div className="relative w-screen h-[100vh] flex justify-center items-center bg-[url('./sing.jpg')] bg-cover bg-center overflow-hidden">
         <div className="absolute inset-0 bg-white/50"></div>
 
-        <div className="relative w-[90%] h-full flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-12 lg:gap-16 z-20 py-6">
+        <div className="relative w-[90%] h-[85vh] mt-10 flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-12 lg:gap-16 z-20 py-6">
           
           
 
@@ -62,14 +68,14 @@ const sections = [
               className="w-full sm:w-[80%] md:w-[90%] flex-1 rounded-tl-2xl rounded-br-2xl overflow-hidden bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(https://wallpapercave.com/wp/wp9699286.jpg)",
+                  `url(${ii1})`,
               }}
             />
             <div
               className="hidden md:block w-full sm:w-[80%] md:w-[90%] flex-1 rounded-tl-2xl rounded-br-2xl overflow-hidden bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(https://lh3.googleusercontent.com/proxy/hDJFGn9x9ncemTpknrS8kKuLGsHyTxvsm9CNETHPEzWLkNY9WBnXh3uoacrfxz71Z8fzjk_fINKcFq-Pn8XppWdumdtfjFlxgehAko8amHODV9MLQMkPlaYJL5mQVCyI)",
+                  `url(${ii2})`,
               }}
             />
           </div>
@@ -94,10 +100,10 @@ const sections = [
   {
     id: 3,
     content: (
-      <div className="relative w-full h-[80vh] flex justify-center items-center bg-[url('./kbc.jpg')] bg-cover bg-center overflow-hidden">
+      <div className="relative w-screen h-[100vh] flex justify-center items-center bg-[url('./kbc.jpg')] bg-cover bg-center overflow-hidden">
         <div className="absolute inset-0 bg-white/50"></div>
 
-        <div className="relative w-[90%] h-full flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-12 lg:gap-16 z-20 py-6">
+        <div className="relative w-[90%] h-[85vh] mt-10 flex flex-col-reverse md:flex-row items-center justify-between gap-6 md:gap-12 lg:gap-16 z-20 py-6">
           
           <div className="w-full md:w-[40%] h-auto flex flex-col justify-center backdrop-blur-2xl p-6 rounded-lg">
             <h2 className="text-white text-2xl md:text-3xl font-bold mb-4">
@@ -115,14 +121,14 @@ const sections = [
               className="w-full sm:w-[80%] md:w-[90%] flex-1 rounded-tl-2xl rounded-br-2xl overflow-hidden bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(https://images.livemint.com/img/2022/07/20/600x338/Kaun-Banega-Crorepati-1_1657603983822_1658342663499_1658342663499.webp)",
+                  `url(${kbc1})`,
               }}
             />
             <div
               className="hidden md:block w-full sm:w-[80%] md:w-[90%] flex-1 rounded-tl-2xl rounded-br-2xl overflow-hidden bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url(https://www.adgully.com/img/800/201907/kbc-11.jpg)",
+                  `url(${kbc2})`,
               }}
             />
           </div>
@@ -146,19 +152,21 @@ const SectionSlider = () => {
   const prevSlide = () => setIndex((prev) => (prev - 1 + sections.length) % sections.length);
 
   return (
-    <div className="relative w-screen h-[80vh] max-w-[100%] mx-auto overflow-hidden">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={sections[index].id}
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.6 }}
-          className="h-full"
-        >
-          {sections[index].content}
-        </motion.div>
-      </AnimatePresence>
+    <div className="relative w-screen h-[100vh] max-w-[100%] mx-auto overflow-hidden">
+      
+      <AnimatePresence mode="sync">
+  <motion.div
+    key={sections[index].id}
+    initial={{ opacity: 0, x: 100 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: -100 }}
+    transition={{ duration: 1 }}
+    className="absolute top-0 left-0 w-full h-full"
+  >
+    {sections[index].content}
+  </motion.div>
+</AnimatePresence>
+
 
       {/* Prev/Next Buttons */}
       <button
@@ -187,8 +195,5 @@ const SectionSlider = () => {
     </div>
   );
 };
-
-// export default SectionSlider;
-
 
 export default SectionSlider;

@@ -1,20 +1,39 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from '../logo.png'
+import logo2 from '../logo2.png'
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if( window.scrollY > 570){
+        setIsScrolled(true);
+      }else{
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="w-screen bg-slate-300 shadow-lg h-[80px] fixed flex justify-center items-center z-50">
+    <nav className={`w-screen h-[80px] fixed flex justify-center items-center z-50 transition-colors duration-500
+    ${ 
+      location.pathname === "/" && !isScrolled ? "backdrop-blur-2xl" : "bg-slate-700 shadow-lg"
+     }`}
+    >
       <div className="w-[85%] h-[60px] flex justify-between items-center">
         
         <div className="w-[10%] h-10 flex justify-center items-center text-2xl font-semibold">
           <a href="/">
-            {/* <h2 className="hover:text-[#74c0df] text-[#fff]">LOGO</h2> */}
               <img
                 className="h-full w-auto object-contain"
-                src={logo}
+                src={logo2}
                 alt="logo"
               />
           </a>
@@ -23,7 +42,7 @@ const Nav = () => {
 
         
         <div className="hidden md:flex w-[85%] items-center justify-end lg:text-[17px] pr-2">
-          <div className="flex gap-6 cursor-pointer text-[#2b2929] font-medium">
+          <div className="flex gap-6 cursor-pointer text-[#fff] font-medium">
             <Link className="hover:text-[#74c0df]" to="/">Home</Link>
             <Link className="hover:text-[#74c0df]" to="/services">Services</Link>
             <Link className="hover:text-[#74c0df]" to="/about">About us</Link>
