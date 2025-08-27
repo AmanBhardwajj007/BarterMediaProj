@@ -60,12 +60,12 @@ const Footer = () => {
 
       <hr className='w-[90%] my-2 text-slate-50' />
 
-      <div className='w-[90%] h-auto md:h-[12vh] flex flex-col md:flex-row justify-around items-center gap-4 md:gap-0'>
+      <div className='w-[90%] h-auto md:h-[12vh] sm:py-5 md:py-5 flex flex-col md:flex-row justify-around items-center gap-4 md:gap-0'>
         <h1 className='text-center md:text-left text-sm md:text-base'>
           Copyright 2008-2021 | All rights reserved | Pooja Movie Creations Group
         </h1>
 
-        <div className='w-full md:w-[30%] flex justify-center md:justify-end gap-4 text-2xl'>
+        <div className='w-full md:w-[30%] sm:py-2 md:py-2 flex justify-center md:justify-end gap-4 text-2xl'>
           <a 
             href="https://www.facebook.com" 
             target="_blank" 
