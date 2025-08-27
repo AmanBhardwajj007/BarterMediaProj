@@ -24,30 +24,19 @@ const Mainpage = () => {
     });
 
     
-    gsap.from(".service-box", {
-
-      // x: 200,              
-      // opacity: 0,
-      // duration: 1.2,
-      // ease: "bounce.out",   
-      // stagger: 0.2,         
-      // scrollTrigger: {
-      //   trigger: ".service-text",
-      //   start: "top 85%",   
-      //   toggleActions: "play none none reset",
-      // },
-
-      y: -50,               
-      scale: 1.2,           
+    gsap.utils.toArray(".service-box").forEach((box, i) => {
+      gsap.from(box, {
+       x: 200,              
       opacity: 0,
-      duration: 1,
-      ease: "power3.out",
-      stagger: 0.3,         
+      duration: 1.2,
+      ease: "bounce.in",   
+      stagger: 0.2,         
       scrollTrigger: {
-        trigger: ".service-box",
-        start: "top 90%",
+        trigger: ".service-text",
+        start: "top 85%",   
         toggleActions: "play none none reset",
       },
+      });
     });
   }, []);
 
