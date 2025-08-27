@@ -1,14 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 function CursorDotRing() {
   const dot = useRef(null);
   const ring = useRef(null);
   const pos = useRef({ x: 0, y: 0 });
   const ringPos = useRef({ x: 0, y: 0 });
+  const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
-    const isTouch = window.matchMedia("(pointer: coarse)").matches;
-    if (isTouch) return; // disable on mobile/touch
+    const touchCheck = window.matchMedia("(pointer: coarse)").matches;
+    setIsTouch(touchCheck);
+    if (touchCheck) return;
 
     document.documentElement.style.cursor = "none";
 
@@ -30,7 +32,6 @@ function CursorDotRing() {
       raf = requestAnimationFrame(loop);
     };
 
-    // handle hover on interactive elements
     const enterInteractive = () => {
       if (ring.current) {
         ring.current.style.transform += " scale(1.8)";
@@ -41,7 +42,7 @@ function CursorDotRing() {
 
     const leaveInteractive = () => {
       if (ring.current) {
-        ring.current.style.transform = ring.current.style.transform.replace(/ scale\\([^)]+\\)/, "");
+        ring.current.style.transform = ring.current.style.transform.replace(/ scale\([^)]+\)/, "");
         ring.current.style.background = "rgba(255,255,255,0.08)";
       }
       if (dot.current) dot.current.style.opacity = "1";
@@ -67,6 +68,8 @@ function CursorDotRing() {
       });
     };
   }, []);
+
+  if (isTouch) return null;
 
   return (
     <>
@@ -109,4 +112,3 @@ function CursorDotRing() {
 }
 
 export default CursorDotRing;
-
