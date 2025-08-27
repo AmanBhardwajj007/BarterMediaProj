@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
 import './index.css'
 import Nav from './components/Nav'
 import Homepage from './pages/Homepage'
@@ -13,15 +14,21 @@ import Media from './pages/Media'
 import SectionSlider from './pages/SectionSlider'
 import ScrollToTop from './utils/ScrollToTop'
 import Footer from './pages/Footer'
+import CursorFollower from './utils/CursorFollower'
 // import Slider2 from './pages/Slider2'
 
 function App() {
+
+  useEffect(() => {
+    // Shery.mouseFollower();
+  }, [])
+
   return (
     <>
+      <CursorFollower/>
       <ScrollToTop/>
       <Nav />
 
-      <div className=""> 
         <Routes>
           <Route path="/" element={<Homepage />} />
           {/* <Route path="/slider" element={<Slider />} /> */}
@@ -33,7 +40,6 @@ function App() {
           <Route path="/barterProducts" element={<BarterProducts />} />
           <Route path="/media" element={<Media />} />
         </Routes>
-      </div>
 
       <Footer/>
     </>

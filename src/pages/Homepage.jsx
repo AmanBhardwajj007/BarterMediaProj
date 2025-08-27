@@ -9,6 +9,7 @@ const Homepage = () => {
     <>
       {/* <Slider/> */}
       <SectionSlider />
+      <Services />
 
       <div className="w-screen min-h-screen flex justify-center items-center bg-white px-4 md:px-8">
         <div className="w-[80%] max-w-7xl flex flex-col md:flex-row justify-between items-center text-black gap-10 md:gap-6 py-10">
@@ -37,7 +38,7 @@ const Homepage = () => {
       </div>
 
       
-      <Services />
+      
       <About />
     </>
   );

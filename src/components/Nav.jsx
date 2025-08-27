@@ -29,7 +29,7 @@ const Nav = () => {
     >
       <div className="w-[85%] h-[60px] flex justify-between items-center">
         
-        <div className="w-[10%] h-10 flex justify-center items-center text-2xl font-semibold">
+        <div className="w-[10%] h-10 flex justify-center items-center text-2xl hover:scale-120 duration-150 font-semibold">
           <a href="/">
               <img
                 className="h-full w-auto object-contain"
@@ -43,13 +43,13 @@ const Nav = () => {
         
         <div className="hidden md:flex w-[85%] items-center justify-end lg:text-[17px] pr-2">
           <div className="flex gap-6 cursor-pointer text-[#fff] font-medium">
-            <Link className="hover:text-[#74c0df]" to="/">Home</Link>
-            <Link className="hover:text-[#74c0df]" to="/services">Services</Link>
-            <Link className="hover:text-[#74c0df]" to="/about">About us</Link>
-            <Link className="hover:text-[#74c0df]" to="/barterMedia">Barter Media</Link>
-            <Link className="hover:text-[#74c0df]" to="/barterProducts">Barter products</Link>
-            <Link className="hover:text-[#74c0df]" to="/media">Media</Link>
-            <Link className="hover:text-[#74c0df]" to="/gallery">Gallery</Link>
+            <Link className="hover:text-[#cccccc] hover:scale-120 duration-150 " to="/">Home</Link>
+            <Link className="hover:text-[#cccccc] hover:scale-120 duration-150 " to="/services">Services</Link>
+            <Link className="hover:text-[#cccccc] hover:scale-120 duration-150 " to="/about">About us</Link>
+            <Link className="hover:text-[#cccccc] hover:scale-120 duration-150 " to="/barterMedia">Barter Media</Link>
+            <Link className="hover:text-[#cccccc] hover:scale-120 duration-150 " to="/barterProducts">Barter products</Link>
+            <Link className="hover:text-[#cccccc] hover:scale-120 duration-150 " to="/media">Media</Link>
+            <Link className="hover:text-[#cccccc] hover:scale-120 duration-150 " to="/gallery">Gallery</Link>
           </div>
         </div>
 
@@ -74,13 +74,13 @@ const Nav = () => {
         transition-all duration-500 ease-in-out overflow-hidden 
         ${isOpen ? "max-h-[500px] opacity-100 py-6" : "max-h-0 opacity-0 py-0"}`}
       >
-        <Link onClick={() => setIsOpen(false)} className="hover:text-[#74c0df]" to="/">Home</Link>
-        <Link onClick={() => setIsOpen(false)} className="hover:text-[#74c0df]" to="/services">Services</Link>
-        <Link onClick={() => setIsOpen(false)} className="hover:text-[#74c0df]" to="/about">About us</Link>
-        <Link onClick={() => setIsOpen(false)} className="hover:text-[#74c0df]" to="/barterMedia">Barter Media</Link>
-        <Link onClick={() => setIsOpen(false)} className="hover:text-[#74c0df]" to="/barterProducts">Barter products</Link>
-        <Link onClick={() => setIsOpen(false)} className="hover:text-[#74c0df]" to="/media">Media</Link>
-        <Link onClick={() => setIsOpen(false)} className="hover:text-[#74c0df]" to="/gallery">Gallery</Link>
+        <Link onClick={() => setIsOpen(false)} to="/">Home</Link>
+        <Link onClick={() => setIsOpen(false)} to="/services">Services</Link>
+        <Link onClick={() => setIsOpen(false)} to="/about">About us</Link>
+        <Link onClick={() => setIsOpen(false)} to="/barterMedia">Barter Media</Link>
+        <Link onClick={() => setIsOpen(false)} to="/barterProducts">Barter products</Link>
+        <Link onClick={() => setIsOpen(false)} to="/media">Media</Link>
+        <Link onClick={() => setIsOpen(false)} to="/gallery">Gallery</Link>
       </div>
     </nav>
   );

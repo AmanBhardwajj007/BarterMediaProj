@@ -5,7 +5,7 @@ const Mainpage = () => {
   return (
     <div
       id="serviceSec"
-      className="w-screen min-h-screen bg-[#090a21] flex justify-center items-center px-4 py-10"
+      className="w-screen min-h-screen bg-[#090a21] flex justify-center items-center px-4 py-10 pt-[80px]"
     >
       <div className="w-[80%] max-w-7xl flex flex-col lg:flex-row justify-between items-center text-white gap-10">
         
@@ -25,7 +25,7 @@ const Mainpage = () => {
         </div>
 
         <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="bg-[#062644] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out">
+          <div className="bg-[#062644] text-white hover:bg-[#eff0eb] hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out">
             <i className="ri-tv-line text-3xl"></i>
             <h3 className="pt-2 text-lg font-medium">Television</h3>
             <p className="text-sm mt-1 leading-relaxed">
@@ -35,7 +35,7 @@ const Mainpage = () => {
             </p>
           </div>
 
-          <div className="bg-[#062644] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out">
+          <div className="bg-[#062644] text-white hover:bg-[#eff0eb] hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out">
             <i className="ri-file-list-3-line text-3xl"></i>
             <h3 className="pt-2 text-lg font-medium">All News Channels</h3>
             <p className="text-sm mt-1 leading-relaxed">
@@ -45,7 +45,7 @@ const Mainpage = () => {
             </p>
           </div>
 
-          <div className="bg-[#062644] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out">
+          <div className="bg-[#062644] text-white hover:bg-[#eff0eb] hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out">
             <i className="ri-clapperboard-ai-fill text-3xl"></i>
             <h3 className="pt-2 text-lg font-medium">
               All Entertainment Channels
@@ -57,7 +57,7 @@ const Mainpage = () => {
             </p>
           </div>
 
-          <div className="bg-[#062644] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out">
+          <div className="bg-[#062644] text-white hover:bg-[#eff0eb] hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out">
             <i className="ri-movie-2-line text-3xl"></i>
             <h3 className="pt-2 text-lg font-medium">
               All Movie / Music / Sports Channels

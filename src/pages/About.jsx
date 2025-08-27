@@ -3,7 +3,7 @@ import "remixicon/fonts/remixicon.css";
 
 const Mainpage = () => {
   return (
-    <div className="w-screen bg-white">
+    <div className="w-screen bg-white pt-[80px]">
       <div className='relative w-screen h-40 sm:h-52 md:h-64 flex justify-center items-center bg-cover bg-center bg-[url("https://images.unsplash.com/photo-1724627561948-3004cc467dc6?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")]'>
         <div className="absolute inset-0 bg-black/40"></div>
         <h1 className="z-40 text-2xl sm:text-3xl md:text-4xl font-medium text-white">
