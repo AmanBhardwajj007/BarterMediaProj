@@ -24,7 +24,7 @@ const Nav = () => {
   return (
     <nav className={`w-screen h-[80px] fixed flex justify-center items-center z-50 transition-colors duration-500
     ${ 
-      location.pathname === "/" && !isScrolled ? "backdrop-blur-2xl" : "bg-slate-700 shadow-lg"
+      location.pathname === "/" && !isScrolled ? "backdrop-blur-2xl" : "bg-slate-900 shadow-lg"
      }`}
     >
       <div className="w-[85%] h-[60px] flex justify-between items-center">
