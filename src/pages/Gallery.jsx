@@ -19,8 +19,53 @@ import lg3 from "../gallery/lg3.jpeg";
 import lg4 from "../gallery/lg4.jpeg";
 import lg5 from "../gallery/lg5.jpeg";
 import cc from "../gallery/cc.jpg"
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
+
+  // Animation 
+
+  useEffect(() => {
+    gsap.from(".hero-title", {
+      y: -100,
+      opacity: 0,
+      duration: 1.9,
+      ease: "bounce.out",
+      scrollTrigger: {
+        trigger: ".hero-title",
+        start: "top 85%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    gsap.from(".hero-p", {
+      y: 90,
+      opacity: 0,
+      duration: 1.6,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: ".hero-title",
+        start: "top 85%",
+        toggleActions: "play none none reset",
+      },
+    });
+
+    gsap.from(".our-gallery", {
+      x: -200,
+      opacity: 0,
+      duration: 1.8,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".our-gallery",
+        start: "top 85%",
+        toggleActions: "play none none reset",
+      },
+    });
+  });
+
   const images = [g2, g3, g4, f1, f2, f3, f4, sev, eight];
   const sliderImages = [lg1, lg2, lg3, lg4, lg5];
 
@@ -53,10 +98,10 @@ const Gallery = () => {
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="z-20 text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold italic text-white">
+          <h1 className="hero-title text-4xl md:text-5xl font-bold italic text-white">
             Captured Moments, Framed Forever..
           </h1>
-          <p className="pt-4 text-base md:text-lg text-white">
+          <p className="hero-p pt-4 text-base md:text-lg text-white">
             Step into our gallery where every image speaks louder than words —
             a vibrant collection <br /> of creativity, memories, and inspiration
             captured in frames.
@@ -65,7 +110,7 @@ const Gallery = () => {
       </div>
 
       <div className="relative w-screen min-h-screen bg-[#090a21] p-6 md:p-10">
-        <div className="flex justify-center items-center gap-3 mb-10">
+        <div className="our-gallery flex justify-center items-center gap-3 mb-10">
           <i className="ri-camera-ai-line text-4xl md:text-5xl text-white"></i>
           <h1 className="text-3xl md:text-xl sm:text-xl lg:text-4xl uppercase underline underline-offset-6 font-semibold text-white">
             Our Photo Gallery

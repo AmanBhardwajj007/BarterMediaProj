@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Homepage = () => {
 
     useEffect(() => {
-    // Text comes from left
+      
     gsap.from(".homepage-textbox", {
       x: -200,
       opacity: 0,
@@ -21,18 +21,17 @@ const Homepage = () => {
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".homepage-textbox",
-        start: "top 80%", // when top of element hits 80% viewport
+        start: "top 80%",
         toggleActions: "play none none reset", 
       },
     });
 
-    // Image comes from right (slightly delayed)
     gsap.from(".homepage-img", {
       x: 200,
       opacity: 0,
       duration: 1,
-      delay: 0.5,
-      ease: "power3.out",
+      delay: 0.7,
+      ease: "bounce.out",
        scrollTrigger: {
         trigger: ".homepage-img",
         start: "top 80%",

@@ -23,21 +23,19 @@ const Mainpage = () => {
       },
     });
 
-    
     // gsap.utils.toArray(".service-box").forEach((box, i) => {
     //   gsap.from(box, {
-    //    x: 200,              
-    //   opacity: 0,
-    //   duration: 1.2,
-    //   ease: "bounce.in",   
-    //   stagger: 0.2,         
-    //   scrollTrigger: {
-    //     trigger: ".service-text",
-    //     start: "top 85%",   
-    //     toggleActions: "play none none reset",
-    //   },
+    //     x: -(i % 2 === 0 ? -100 : 100),  
+    //     duration: 0.5,
+    //     ease: "bounce.out",
+    //     scrollTrigger: {
+    //       trigger: box,                
+    //       start: "top 85%",           
+    //       toggleActions: "play none none reset",
+    //     },
     //   });
     // });
+    
   }, []);
 
   return (

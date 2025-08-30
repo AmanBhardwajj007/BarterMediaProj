@@ -1,13 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+
+    useEffect(() => {
+      gsap.from(".title-link",{
+        y: -200,              
+        opacity: 0,
+        duration: 0.9,
+        ease: "bounce.out",   
+        stagger: 0.2,         
+        scrollTrigger: {
+          trigger: ".title-link",
+          start: "top 85%",   
+          toggleActions: "play none none reset",
+        },
+      });
+    }, [])
+
   return (
     <div className='w-screen h-auto md:h-[75vh] flex flex-col items-center pt-3 bg-slate-900 text-white pb-6 md:pb-0'>
       <div className='w-[90%] h-auto md:h-[55vh] flex flex-col md:flex-row justify-between md:justify-around mt-4 gap-6 md:gap-0'>
 
         <div className='w-full md:w-[31%] h-auto md:h-[55vh]'>
-          <h1 className='my-4 md:my-8 text-center text-lg md:text-xl font-bold '>QUICK LINKS</h1>
+          <h1 className='title-link my-4 md:my-8 text-center text-lg md:text-xl font-bold '>QUICK LINKS</h1>
           <div className='flex flex-col gap-2 ml-6 md:ml-10 mt-4 md:mt-8 text-[15px] md:text-[16px] font-medium'>
             <Link className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
             hover:text-[#cccccc]' to="/"><i className="ri-arrow-right-s-fill text-[18px] mr-[8px] "></i>Home</Link>
@@ -25,7 +45,7 @@ const Footer = () => {
         </div>
 
         <div className='w-full md:w-[31%] h-auto md:h-[55vh]'>
-          <h1 className='my-4 md:my-8 text-center text-lg md:text-xl font-bold'>MORE LINKS</h1>
+          <h1 className='title-link my-4 md:my-8 text-center text-lg md:text-xl font-bold'>MORE LINKS</h1>
           <div className='flex flex-col gap-2 ml-6 md:ml-10 mt-4 md:mt-8 text-[15px] md:text-[16px] font-medium'>
             <Link className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
             hover:text-[#cccccc]' to="/"><i className="ri-arrow-right-s-fill text-[18px] mr-[8px]"></i>Our Clients</Link>
@@ -43,7 +63,7 @@ const Footer = () => {
         </div>
 
         <div className='w-full md:w-[31%] h-auto md:h-[55vh]'>
-          <h1 className='my-4 md:my-8 text-center text-lg md:text-xl font-bold'>Contact Us</h1>
+          <h1 className='title-link my-4 md:my-8 text-center text-lg md:text-xl font-bold'>Contact Us</h1>
           <div className='flex flex-col gap-4 ml-6 md:ml-10 mt-4 md:mt-8 text-[15px] md:text-[16px] font-medium'>
             <Link className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
             hover:text-[#cccccc]' to="/"><i className="ri-phone-fill text-[18px] mr-[8px]"></i>(+91)-8799746544</Link>
