@@ -13,7 +13,7 @@ const Mainpage = () => {
     gsap.from(".service-text", {
       x: -200,              
       opacity: 0,
-      duration: 1.2,
+      duration: 1,
       ease: "bounce.out",   
       stagger: 0.2,         
       scrollTrigger: {

@@ -13,7 +13,7 @@ const Mainpage = () => {
         y: -90,
         opacity: 0,
         duration: 1,
-        delay: .6,
+        delay: .3,
         ease: "circ.out",
         scrollTrigger: {
         trigger: ".main-title",
@@ -26,7 +26,7 @@ const Mainpage = () => {
         x: -300,
         opacity: 0,
         duration: 1,
-        delay: .5,
+        delay: .3,
         ease: "circ.out",
         scrollTrigger: {
         trigger: ".brand-title",
@@ -39,7 +39,7 @@ const Mainpage = () => {
         y: -90,
         opacity: 0,
         duration: 1,
-        delay: .5,
+        delay: .4,
         ease: "circ.out",
         scrollTrigger: {
         trigger: ".brand-p",
@@ -52,7 +52,7 @@ const Mainpage = () => {
         y: -90,
         opacity: 0,
         duration: 1,
-        delay: .4,
+        delay: .3,
         ease: "bounce.out",
         scrollTrigger: {
         trigger: ".scope-work",

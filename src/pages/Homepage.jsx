@@ -17,7 +17,7 @@ const Homepage = () => {
       x: -200,
       opacity: 0,
       duration: 1,
-      delay: 0.4,
+      delay: 0.3,
       ease: "power3.out",
       scrollTrigger: {
         trigger: ".homepage-textbox",
@@ -30,7 +30,7 @@ const Homepage = () => {
       x: 200,
       opacity: 0,
       duration: 1,
-      delay: 0.4,
+      delay: 0.3,
       ease: "bounce.out",
        scrollTrigger: {
         trigger: ".homepage-img",
