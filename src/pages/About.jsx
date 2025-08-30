@@ -36,7 +36,7 @@ const Mainpage = () => {
       });
 
       gsap.from(".brand-p",{
-        x: 300,
+        y: -90,
         opacity: 0,
         duration: 1,
         delay: .5,
@@ -49,7 +49,7 @@ const Mainpage = () => {
       });
 
       gsap.from(".scope-work",{
-        x: 300,
+        y: -90,
         opacity: 0,
         duration: 1,
         delay: .4,
