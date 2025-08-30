@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import GoToTop from './components/GoToTop'
 import './index.css'
 import Nav from './components/Nav'
 import Homepage from './pages/Homepage'
@@ -23,13 +24,13 @@ function App() {
 
   return (
     <>
+    
       <CursorFollower/>
       <ScrollToTop/>
       <Nav />
 
         <Routes>
           <Route path="/" element={<Homepage />} />
-          {/* <Route path="/slider" element={<Slider />} /> */}
           <Route path="/sectionslider" element={<SectionSlider />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
@@ -40,6 +41,7 @@ function App() {
         </Routes>
 
       <Footer/>
+      <GoToTop/>
     </>
   )
 }

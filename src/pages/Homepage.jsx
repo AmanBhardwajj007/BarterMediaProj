@@ -30,7 +30,7 @@ const Homepage = () => {
       x: 200,
       opacity: 0,
       duration: 1,
-      delay: 0.7,
+      delay: 0.4,
       ease: "bounce.out",
        scrollTrigger: {
         trigger: ".homepage-img",
