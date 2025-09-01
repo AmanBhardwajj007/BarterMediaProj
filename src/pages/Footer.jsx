@@ -17,7 +17,8 @@ const Footer = () => {
         scrollTrigger: {
           trigger: ".title-link",
           start: "top 85%",   
-          toggleActions: "play none none reset",
+          toggleActions: "play none none none",
+          once: true,
         },
       });
     }, [])

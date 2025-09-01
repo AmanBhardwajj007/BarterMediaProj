@@ -19,7 +19,8 @@ const Mainpage = () => {
       scrollTrigger: {
         trigger: ".service-text",
         start: "top 85%",   
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 

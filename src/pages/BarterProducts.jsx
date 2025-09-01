@@ -55,7 +55,8 @@ const Mainpage = () => {
       scrollTrigger: {
         trigger: ".hero-title",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -67,7 +68,8 @@ const Mainpage = () => {
       scrollTrigger: {
         trigger: ".hero-sub",
         start: "top 90%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -79,7 +81,8 @@ const Mainpage = () => {
       scrollTrigger: {
         trigger: ".card-title",
         start: "top 90%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -91,7 +94,8 @@ const Mainpage = () => {
       scrollTrigger: {
         trigger: ".connect-section",
         start: "top 80%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 

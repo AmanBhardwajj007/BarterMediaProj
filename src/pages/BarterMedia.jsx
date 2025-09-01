@@ -23,7 +23,8 @@ const BarterMedia = () => {
       scrollTrigger: {
         trigger: ".news-title",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -35,7 +36,8 @@ const BarterMedia = () => {
       scrollTrigger: {
         trigger: ".news-p",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -47,7 +49,8 @@ const BarterMedia = () => {
       scrollTrigger: {
         trigger: ".idol-title",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -59,7 +62,8 @@ const BarterMedia = () => {
       scrollTrigger: {
         trigger: ".idol-p",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -71,7 +75,8 @@ const BarterMedia = () => {
       scrollTrigger: {
         trigger: ".kbc-title",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -83,10 +88,11 @@ const BarterMedia = () => {
       scrollTrigger: {
         trigger: ".kbc-p",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
-  });
+  }, []);
 
   return (
     <div className="w-screen h-auto flex flex-col items-center pt-[80px]">

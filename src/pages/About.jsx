@@ -18,7 +18,8 @@ const Mainpage = () => {
         scrollTrigger: {
         trigger: ".main-title",
         start: "top 80%",
-        toggleActions: "play none none reset", 
+        toggleActions: "play none none none",
+        once: true, 
         },
       });
 
@@ -31,7 +32,8 @@ const Mainpage = () => {
         scrollTrigger: {
         trigger: ".brand-title",
         start: "top 80%",
-        toggleActions: "play none none reset", 
+        toggleActions: "play none none none",
+        once: true, 
         },
       });
 
@@ -44,7 +46,8 @@ const Mainpage = () => {
         scrollTrigger: {
         trigger: ".brand-p",
         start: "top 80%",
-        toggleActions: "play none none reset", 
+        toggleActions: "play none none none",
+        once: true, 
         },
       });
 
@@ -57,7 +60,8 @@ const Mainpage = () => {
         scrollTrigger: {
         trigger: ".scope-work",
         start: "top 80%",
-        toggleActions: "play none none reset", 
+        toggleActions: "play none none none",
+        once: true, 
         },
       });
     }, []);

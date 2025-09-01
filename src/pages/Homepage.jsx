@@ -22,7 +22,8 @@ const Homepage = () => {
       scrollTrigger: {
         trigger: ".homepage-textbox",
         start: "top 80%",
-        toggleActions: "play none none reset", 
+        toggleActions: "play none none none",
+        once: true, 
       },
     });
 
@@ -35,7 +36,8 @@ const Homepage = () => {
        scrollTrigger: {
         trigger: ".homepage-img",
         start: "top 80%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
   }, []);

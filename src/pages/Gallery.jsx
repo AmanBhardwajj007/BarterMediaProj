@@ -37,7 +37,8 @@ const Gallery = () => {
       scrollTrigger: {
         trigger: ".hero-title",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -49,7 +50,8 @@ const Gallery = () => {
       scrollTrigger: {
         trigger: ".hero-title",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
 
@@ -61,10 +63,11 @@ const Gallery = () => {
       scrollTrigger: {
         trigger: ".our-gallery",
         start: "top 85%",
-        toggleActions: "play none none reset",
+        toggleActions: "play none none none",
+        once: true,
       },
     });
-  });
+  }, []);
 
   const images = [g2, g3, g4, f1, f2, f3, f4, sev, eight];
   const sliderImages = [lg1, lg2, lg3, lg4, lg5];
