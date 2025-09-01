@@ -37,7 +37,7 @@ function App() {
           <Route path="/barterMedia" element={<BarterMedia />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/barterProducts" element={<BarterProducts />} />
-          <Route path="/media" element={<Media />} />
+          {/* <Route path="/media" element={<Media />} /> */}
         </Routes>
 
       <Footer/>

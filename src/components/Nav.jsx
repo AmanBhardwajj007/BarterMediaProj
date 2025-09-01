@@ -62,10 +62,10 @@ const Nav = () => {
             ${location.pathname === "/barterProducts" ? "text-yellow-400 font-semibold" : ""}`} to="/barterProducts">
               Barter products
             </Link>
-            <Link className={`hover:text-[#cccccc] hover:translate-y-[-5px] hover:scale-110 duration-150 
+            {/* <Link className={`hover:text-[#cccccc] hover:translate-y-[-5px] hover:scale-110 duration-150 
             ${location.pathname === "/media" ? "text-yellow-400 font-semibold" : ""}`} to="/media">
               Media
-            </Link>
+            </Link> */}
             <Link className={`hover:text-[#cccccc] hover:translate-y-[-5px] hover:scale-110 duration-150 
             ${location.pathname === "/gallery" ? "text-yellow-400 font-semibold" : ""}`} to="/gallery">
               Gallery
