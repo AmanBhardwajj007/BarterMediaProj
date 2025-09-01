@@ -93,7 +93,8 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
           <i className="ri-facebook-fill border-1 rounded-xl p-[10px] 
-          hover:bg-white hover:text-[#090a21]"></i>
+          hover:bg-white hover:text-[#090a21] hover:border-none transition 
+          hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.2),0_0_15px_3px_rgba(255,215,0,0.3)]"></i>
           </a>
           <a 
             href="https://www.twitter.com" 
@@ -101,7 +102,8 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
           <i className="ri-twitter-x-line border-1 rounded-xl p-[10px] 
-          hover:bg-white hover:text-[#090a21]"></i>
+          hover:bg-white hover:text-[#090a21] hover:border-none transition 
+          hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.2),0_0_15px_3px_rgba(255,215,0,0.3)]"></i>
           </a>
           <a 
             href="https://www.instagram.com" 
@@ -109,7 +111,8 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
           <i className="ri-instagram-line border-1 rounded-xl p-[10px] 
-          hover:bg-white hover:text-[#090a21]"></i>
+          hover:bg-white hover:text-[#090a21] hover:border-none transition 
+          hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.2),0_0_15px_3px_rgba(255,215,0,0.3)]"></i>
           </a>
           <a 
             href="https://www.youtube.com" 
@@ -117,7 +120,8 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
           <i className="ri-youtube-fill border-1 rounded-xl p-[10px] 
-          hover:bg-white hover:text-[#090a21]"></i>
+          hover:bg-white hover:text-[#090a21] hover:border-none transition 
+          hover:shadow-[0_0_10px_2px_rgba(255,255,255,0.2),0_0_15px_3px_rgba(255,215,0,0.3)]"></i>
           </a>
         </div>
       </div>
