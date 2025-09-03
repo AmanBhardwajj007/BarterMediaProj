@@ -146,12 +146,10 @@ const Gallery = () => {
       </div>
 
       {/* Card Slider */}
-      <div className="relative w-screen h-[80vh] sm:h-[85vh] md:h-[90vh] flex justify-center items-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${cc})`,
-      }}
+      <div className="relative w-screen h-[80vh] sm:h-[85vh] md:h-[90vh] flex justify-center items-center overflow-hidden bg-[linear-gradient(to_right,theme(colors.orange.300),theme(colors.amber.50),theme(colors.cyan.200),theme(colors.sky.400))]"
       >
-        <div className="flex gap-3 sm:gap-6 items-center">
+        <div className="absolute inset-0 bg-white/30"></div>
+        <div className="flex gap-3 sm:gap-6 items-center z-40">
           {getVisibleImages().map((imgIdx, i) => (
             <motion.div
               key={imgIdx}
@@ -159,7 +157,7 @@ const Gallery = () => {
               style={{ backgroundImage: `url(${sliderImages[imgIdx]})` }}
               onMouseEnter={() => setPaused(true)}
               onMouseLeave={() => setPaused(false)}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.03 }}
               animate={{
                 scale: i === 1 ? 1.1 : 0.9,
                 opacity: i === 1 ? 1 : 0.7,
