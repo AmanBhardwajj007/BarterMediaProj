@@ -1,11 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ContactUs from '../components/ContactUs';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+
+  const [showContactUs, setShowContactUs] = useState(false);
+
+    useEffect(() => {
+      if (showContactUs) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflowY = "auto";
+      }
+    }, [showContactUs]);
 
     useEffect(() => {
       gsap.from(".title-link",{
@@ -76,16 +87,24 @@ const Footer = () => {
             <div className="h-0.5 w-20 sm:w-20 md:w-24 lg:w-24 bg-yellow-400"></div>
           </div>
           <div className='flex flex-col gap-4 ml-6 md:ml-10 mt-4 md:mt-8 text-[15px] md:text-[16px] font-medium'>
-            <Link className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
+            <Link 
+            onClick={() => setShowContactUs(true)}
+            className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
             hover:text-[#cccccc]' to="/"><i className="ri-phone-fill text-[18px] mr-[8px]"></i>(+91)-8799746544</Link>
-            <Link className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
+            <Link 
+            onClick={() => setShowContactUs(true)}
+            className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
             hover:text-[#cccccc]' to="/services"><i className="ri-phone-fill text-[18px] mr-[8px]"></i>(+91)-8076151724</Link>
-            <Link className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
+            <Link 
+            onClick={() => setShowContactUs(true)}
+            className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
             hover:text-[#cccccc]' to="/about"><i className="ri-mail-fill text-[18px] mr-[8px]"></i>info@poojamoviecreations.com</Link>
             <Link className='inline-block transform transition duration-300 ease-in-out hover:translate-x-[10px]
             hover:text-[#cccccc]' to="/barterMedia"><i className="ri-map-pin-fill text-[18px] mr-[8px]"></i>www.poojamoviecreations.com</Link>
           </div>
+          
         </div>
+        {showContactUs && <ContactUs onClose={() => setShowContactUs(false)} />}
 
       </div>
 

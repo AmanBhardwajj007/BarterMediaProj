@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import GoToTop from './components/GoToTop'
 import './index.css'
 import Nav from './components/Nav'
@@ -15,16 +15,13 @@ import SectionSlider from './pages/SectionSlider'
 import ScrollToTop from './utils/ScrollToTop'
 import Footer from './pages/Footer'
 import CursorFollower from './utils/CursorFollower'
+import ContactUs from './components/ContactUs'
 
 function App() {
 
-  // useEffect(() => {
-  //   Shery.mouseFollower();
-  // }, [])
-
   return (
     <>
-    
+      {/* <ContactUs/> */}
       <CursorFollower/>
       <ScrollToTop/>
       <Nav />

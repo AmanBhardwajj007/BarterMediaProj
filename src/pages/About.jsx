@@ -81,9 +81,11 @@ const Mainpage = () => {
 
       <div className="w-full flex justify-center mt-10 px-4">
         <div className="w-full md:w-[80%] flex flex-col justify-center items-center border-[1.8px] border-gray-600 rounded-md p-6 sm:p-8 md:p-11">
-          <h1 className="brand-title text-yellow-400 sm:text-xl md:text-2xl font-bold md:text-left">
-            Connect India's No-1 Brand Promotion Company
-          </h1>
+          <div className="bg-[#414141] py-1.5 px-16 rounded-tr-xl rounded-bl-xl">
+            <h1 className="brand-title text-yellow-400 text-sm  sm:text-xl md:text-2xl font-semibold md:text-left">
+              Connect India's No-1 Brand Promotion Company
+            </h1>
+          </div>
           <p className="brand-p mt-3 text-sm sm:text-base md:text-lg leading-6 md:text-left">
             We are the brands makers we establish brands and help in their Brand
             Promotion. Our expert team makes CUSTOMIZE brandings and promotion
@@ -138,10 +140,12 @@ const Mainpage = () => {
 
           {/* Scope of Work */}
           <div className="scope-work w-full lg:w-1/3 backdrop-blur-sm p-6 rounded-md">
-            <h1 className="text-lg text-yellow-400 sm:text-xl md:text-2xl font-semibold mb-4">
-              SCOPE OF OUR WORK :
-            </h1>
-            <ul className="space-y-2 text-sm sm:text-base md:text-[17px]">
+            <div className="bg-[#414141] py-1 px-10 rounded-tr-xl rounded-bl-xl">
+              <h1 className="text-lg text-yellow-400 sm:text-xl md:text-2xl font-semibold ">
+                SCOPE OF OUR WORK :
+              </h1>
+            </div>
+            <ul className="space-y-2 text-sm sm:text-base md:text-[17px] mt-5">
               <li>
                 <i className="ri-arrow-drop-right-line"></i> Brand Development
               </li>
