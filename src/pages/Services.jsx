@@ -48,7 +48,7 @@ const Mainpage = () => {
       border-slate-700 border-dashed rounded-2xl text-white gap-10 p-10">
         
         <div className="w-full lg:w-1/3 service-text">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold ">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">
             Barter Media Services
           </h1>
           <p className="text-sm sm:text-base lg:text-lg leading-relaxed mt-4">
@@ -63,9 +63,9 @@ const Mainpage = () => {
         </div>
 
         <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="bg-[#062644] text-white hover:bg-[#eff0eb] hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out service-box">
-            <i className="ri-tv-line text-3xl"></i>
-            <h3 className="pt-2 text-lg font-medium">Television</h3>
+          <div className="bg-[#062644] text-white hover:bg-slate-200 hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out service-box">
+            <i className="ri-tv-line text-[37px]"></i>
+            <h3 className=" text-lg font-medium text-yellow-400">Television</h3>
             <p className="text-sm mt-1 leading-relaxed">
               Pan India Barter 2 Barter, exchange of media into products. Spend
               less and create buzz in terms of Media Promotion & Branding. We
@@ -73,9 +73,9 @@ const Mainpage = () => {
             </p>
           </div>
 
-          <div className="bg-[#062644] text-white hover:bg-[#eff0eb] hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out service-box">
-            <i className="ri-file-list-3-line text-3xl"></i>
-            <h3 className="pt-2 text-lg font-medium">All News Channels</h3>
+          <div className="bg-[#062644] text-white hover:bg-slate-200 hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out service-box">
+            <i className="ri-file-list-3-line text-[37px]"></i>
+            <h3 className=" text-lg font-medium text-yellow-400">All News Channels</h3>
             <p className="text-sm mt-1 leading-relaxed">
               Pan India Barter 2 Barter, exchange of media into products. Spend
               less and create buzz in terms of Media Promotion & Branding. We
@@ -83,9 +83,9 @@ const Mainpage = () => {
             </p>
           </div>
 
-          <div className="bg-[#062644] text-white hover:bg-[#eff0eb] hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out service-box">
-            <i className="ri-clapperboard-ai-fill text-3xl"></i>
-            <h3 className="pt-2 text-lg font-medium">
+          <div className="bg-[#062644] text-white hover:bg-slate-200 hover:text-[#090a21] rounded-lg p-6 hover:scale-105 duration-300 ease-in-out service-box">
+            <i className="ri-clapperboard-ai-fill text-[37px]"></i>
+            <h3 className=" text-lg font-medium text-yellow-400">
               All Entertainment Channels
             </h3>
             <p className="text-sm mt-1 leading-relaxed">
@@ -95,9 +95,9 @@ const Mainpage = () => {
             </p>
           </div>
 
-          <div className="bg-[#062644] text-white hover:bg-[#eff0eb] hover:text-[#090a21] rounded-lg p-6 hover:scale-110 duration-300 ease-in-out service-box">
-            <i className="ri-movie-2-line text-3xl "></i>
-            <h3 className="pt-2 text-lg font-medium">
+          <div className="bg-[#062644] text-white hover:bg-slate-200 hover:text-[#090a21] rounded-lg p-6 hover:scale-110 duration-300 ease-in-out service-box">
+            <i className="ri-movie-2-line text-[37px] "></i>
+            <h3 className=" text-lg font-medium text-yellow-400">
               All Movie / Music / Sports Channels
             </h3>
             <p className="text-sm mt-1 leading-relaxed">

@@ -74,14 +74,14 @@ const Mainpage = () => {
     >
       <div className='relative w-screen h-40 sm:h-52 md:h-64 flex justify-center items-center bg-cover bg-center bg-[url("https://images.unsplash.com/photo-1724627561948-3004cc467dc6?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")]'>
         <div className="absolute inset-0 bg-black/40"></div>
-        <h1 className="main-title z-40 text-2xl sm:text-3xl md:text-4xl font-medium text-white">
+        <h1 className="main-title z-40 text-2xl sm:text-3xl md:text-5xl font-medium text-white">
           What we Do
         </h1>
       </div>
 
       <div className="w-full flex justify-center mt-10 px-4">
-        <div className="w-full md:w-[80%] flex flex-col justify-center items-center border-[2px] border-gray-600 rounded-md p-6 sm:p-8 md:p-11">
-          <h1 className="brand-title text-lg sm:text-xl md:text-2xl font-semibold md:text-left">
+        <div className="w-full md:w-[80%] flex flex-col justify-center items-center border-[1.8px] border-gray-600 rounded-md p-6 sm:p-8 md:p-11">
+          <h1 className="brand-title text-yellow-400 sm:text-xl md:text-2xl font-bold md:text-left">
             Connect India's No-1 Brand Promotion Company
           </h1>
           <p className="brand-p mt-3 text-sm sm:text-base md:text-lg leading-6 md:text-left">
@@ -138,7 +138,7 @@ const Mainpage = () => {
 
           {/* Scope of Work */}
           <div className="scope-work w-full lg:w-1/3 backdrop-blur-sm p-6 rounded-md">
-            <h1 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4">
+            <h1 className="text-lg text-yellow-400 sm:text-xl md:text-2xl font-semibold mb-4">
               SCOPE OF OUR WORK :
             </h1>
             <ul className="space-y-2 text-sm sm:text-base md:text-[17px]">
