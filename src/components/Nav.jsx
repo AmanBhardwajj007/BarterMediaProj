@@ -90,7 +90,7 @@ const Nav = () => {
 
 
       <div
-        className={`absolute top-[80px] left-0 w-full bg-[#ff4444] flex flex-col items-center gap-6 text-white font-medium md:hidden 
+        className={`absolute top-[80px] left-0 w-full bg-yellow-500 flex flex-col items-center gap-6 text-white font-medium md:hidden 
         transition-all duration-500 ease-in-out overflow-hidden 
         ${isOpen ? "max-h-[500px] opacity-100 py-6" : "max-h-0 opacity-0 py-0"}`}
       >
