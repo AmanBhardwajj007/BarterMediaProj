@@ -35,7 +35,7 @@ function CursorDotRing() {
     const enterInteractive = () => {
       if (ring.current) {
         ring.current.style.transform += " scale(1.8)";
-        ring.current.style.background = "rgba(255,255,255,0.15)";
+        ring.current.style.background = "rgba(250, 204, 21, 0.4)";
       }
       if (dot.current) dot.current.style.opacity = "0";
     };
@@ -43,7 +43,7 @@ function CursorDotRing() {
     const leaveInteractive = () => {
       if (ring.current) {
         ring.current.style.transform = ring.current.style.transform.replace(/ scale\([^)]+\)/, "");
-        ring.current.style.background = "rgba(255,255,255,0.08)";
+        ring.current.style.background = "rgba(250, 204, 21, 0.3)";
       }
       if (dot.current) dot.current.style.opacity = "1";
     };
@@ -98,8 +98,8 @@ function CursorDotRing() {
           width: 32,
           height: 32,
           borderRadius: "50%",
-          background: "rgba(255,255,255,0.08)",
-          border: "1px solid rgba(255,255,255,0.35)",
+          background: "rgba(250, 204, 21, 0.3)",
+          border: "1px solid rgba(250,204,21,0.6)",
           pointerEvents: "none",
           zIndex: 9998,
           transform: "translate3d(-16px,-16px,0)",
