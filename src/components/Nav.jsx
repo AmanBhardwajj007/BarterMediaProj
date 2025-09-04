@@ -99,7 +99,7 @@ const Nav = () => {
         <Link onClick={() => setIsOpen(false)} to="/about">About us</Link>
         <Link onClick={() => setIsOpen(false)} to="/barterMedia">Barter Media</Link>
         <Link onClick={() => setIsOpen(false)} to="/barterProducts">Barter products</Link>
-        <Link onClick={() => setIsOpen(false)} to="/media">Media</Link>
+        {/* <Link onClick={() => setIsOpen(false)} to="/media">Media</Link> */}
         <Link onClick={() => setIsOpen(false)} to="/gallery">Gallery</Link>
       </div>
     </nav>
