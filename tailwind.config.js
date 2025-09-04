@@ -1,8 +1,11 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: "class", // enables dark mode via 'class'
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+  content: [
+  "./src/**/*.{js,jsx,ts,tsx}"
+  ],
+})
