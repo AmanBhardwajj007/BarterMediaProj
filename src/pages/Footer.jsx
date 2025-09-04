@@ -40,7 +40,7 @@ const Footer = () => {
 
         <div className='w-full md:w-[31%] h-auto md:h-[55vh]'>
           <h1 className='title-link my-4 md:my-8 text-center text-lg md:text-xl font-bold '>QUICK LINKS</h1>
-          <div className="flex items-center justify-center relative -mt-[2.7vh] md:-mt-[4.5vh] sm:-mt-[2.5vh]">
+          <div className="flex items-center justify-center relative -mt-[2vh] md:-mt-[4.5vh] sm:-mt-[2.5vh]">
             <div className="h-0.5 w-20 sm:w-20 md:w-24 lg:w-24 bg-yellow-400"></div>
           </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
 
         <div className='w-full md:w-[31%] h-auto md:h-[55vh]'>
           <h1 className='title-link my-4 md:my-8 text-center text-lg md:text-xl font-bold'>MORE LINKS</h1>
-          <div className="flex items-center justify-center relative -mt-[2.7vh] md:-mt-[4.5vh] sm:-mt-[2.5vh]">
+          <div className="flex items-center justify-center relative -mt-[2vh] md:-mt-[4.5vh] sm:-mt-[2.5vh]">
             <div className="h-0.5 w-20 sm:w-20 md:w-24 lg:w-24 bg-yellow-400"></div>
           </div>
           <div className='flex flex-col gap-2 ml-6 md:ml-10 mt-4 md:mt-8 text-[15px] md:text-[16px] font-medium'>
@@ -83,7 +83,7 @@ const Footer = () => {
 
         <div className='w-full md:w-[31%] h-auto md:h-[55vh]'>
           <h1 className='title-link my-4 md:my-8 text-center text-lg md:text-xl font-bold'>Contact Us</h1>
-          <div className="flex items-center justify-center relative -mt-[2.7vh] md:-mt-[4.5vh] sm:-mt-[2.5vh]">
+          <div className="flex items-center justify-center relative -mt-[2vh] md:-mt-[4.5vh] sm:-mt-[2.5vh]">
             <div className="h-0.5 w-20 sm:w-20 md:w-24 lg:w-24 bg-yellow-400"></div>
           </div>
           <div className='flex flex-col gap-4 ml-6 md:ml-10 mt-4 md:mt-8 text-[15px] md:text-[16px] font-medium'>
