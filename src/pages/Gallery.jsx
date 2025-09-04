@@ -112,6 +112,7 @@ const Gallery = () => {
         </div>
       </div>
 
+      {/* Image block section  */}
       <div className="relative w-screen min-h-screen bg-[#090a21] p-6 md:p-10">
         <div className="our-gallery flex justify-center items-center gap-3 mb-10">
           <i className="ri-camera-ai-line text-4xl md:text-5xl text-white"></i>
@@ -135,15 +136,16 @@ const Gallery = () => {
               ></div>
             ))}
           </div>
-
-          <div className="absolute inset-0 pointer-events-none hidden lg:block">
-            <hr className="absolute top-1/3 left-[4%] w-[92%] border-0 border-b border-dashed border-slate-700" />
-            <hr className="absolute top-2/3 left-[4%] w-[92%] border-0 border-b border-dashed border-slate-700" />
-            <hr className="absolute top-[5%] left-1/3 h-[90%] border-0 border-l border-dashed border-slate-700" />
-            <hr className="absolute top-[5%] left-2/3 h-[90%] border-0 border-l border-dashed border-slate-700" />
-          </div>
         </div>
       </div>
+
+      {/* <div className="absolute inset-0 pointer-events-none hidden lg:block">
+        <hr className="absolute top-1/3 left-[4%] w-[92%] border-0 border-b border-dashed border-slate-700" />
+        <hr className="absolute top-2/3 left-[4%] w-[92%] border-0 border-b border-dashed border-slate-700" />
+        <hr className="absolute top-[5%] left-1/3 h-[90%] border-0 border-l border-dashed border-slate-700" />
+        <hr className="absolute top-[5%] left-2/3 h-[90%] border-0 border-l border-dashed border-slate-700" />
+      </div> */}
+
 
       {/* Card Slider */}
       <div className="relative w-screen h-[80vh] sm:h-[85vh] md:h-[90vh] flex justify-center items-center overflow-hidden bg-[linear-gradient(to_right,theme(colors.orange.300),theme(colors.amber.50),theme(colors.cyan.200),theme(colors.sky.400))]"
