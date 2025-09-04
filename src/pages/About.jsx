@@ -146,28 +146,29 @@ const Mainpage = () => {
               </h1>
             </div>
             <ul className="space-y-2 text-sm sm:text-base md:text-[17px] mt-5">
-              <li>
-                <i className="ri-arrow-drop-right-line"></i> Brand Development
+              <li className="flex">
+                <i className="ri-arrow-drop-right-line"></i>
+                <h3 className="ml-1">Brand Development</h3>
               </li>
-              <li>
-                <i className="ri-arrow-drop-right-line"></i> New Brand
-                Establishment Planning
+              <li className="flex">
+                <i className="ri-arrow-drop-right-line"></i>
+                <h3 className="ml-1">New Brand Establishment Planning</h3>
               </li>
-              <li>
-                <i className="ri-arrow-drop-right-line"></i> New Product
-                Launching Marketing <br /> &emsp; Planning
+              <li className="flex">
+                <i className="ri-arrow-drop-right-line"></i>
+                <h3 className="ml-1">New Product Launching Marketing Planning</h3>
               </li>
-              <li>
-                <i className="ri-arrow-drop-right-line"></i> How to Increase
-                Sales
+              <li className="flex">
+                <i className="ri-arrow-drop-right-line"></i>
+                <h3 className="ml-1">How to Increase Sales</h3>
               </li>
-              <li>
-                <i className="ri-arrow-drop-right-line"></i> How to Enhance Your
-                Product in Market
+              <li className="flex">
+                <i className="ri-arrow-drop-right-line"></i>
+                <h3 className="ml-1">How to Enhance Your Product in Market</h3>
               </li>
-              <li>
-                <i className="ri-arrow-drop-right-line"></i> How to Make Your
-                Brand More Exclusive <br /> &emsp; in Market
+              <li className="flex">
+                <i className="ri-arrow-drop-right-line"></i>
+                <h3 className="ml-1">How to Make Your Brand More Exclusive in Market</h3>
               </li>
             </ul>
           </div>
