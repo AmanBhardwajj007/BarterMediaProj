@@ -21,8 +21,8 @@ function App() {
 
   return (
     <>
-      <ContactUs/>
-      {/* <CursorFollower/>
+      {/* <ContactUs/> */}
+      <CursorFollower/>
       <ScrollToTop/>
       <Nav />
 
@@ -33,12 +33,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/barterMedia" element={<BarterMedia />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/barterProducts" element={<BarterProducts />} /> */}
+          <Route path="/barterProducts" element={<BarterProducts />} />
           {/* <Route path="/media" element={<Media />} /> */}
-        {/* </Routes>
+        </Routes>
 
       <Footer/>
-      <GoToTop/> */}
+      <GoToTop/>
     </>
   )
 }
